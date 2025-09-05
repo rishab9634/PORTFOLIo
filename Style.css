@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Header with Animated Gradient */
+header {
+  background: linear-gradient(270deg, #0077ff, #00c3ff, #00ffaa, #ff00ff);
+  background-size: 800% 800%;
+  animation: gradientMove 12s ease infinite;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header .highlight {
+  color: yellow;
+}
+
+/* Gradient Animation Keyframes */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #222;
+  padding: 15px;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #00c3ff;
+}
+
+/* Sections */
+.section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.project-card {
+  background: #f9f9f9;
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 5px solid #0077ff;
+  border-radius: 5px;
+}
+.project-card h3 {
+  margin: 0;
+  color: #0077ff;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+/* Typing Animation Cursor */
+#typing {
+  border-right: 3px solid yellow;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 32px;
+}
